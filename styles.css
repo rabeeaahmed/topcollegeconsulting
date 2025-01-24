@@ -1,0 +1,119 @@
+/* Define extracted logo colors */
+:root {
+    --dark-blue: #1E2A38; /* Example extracted color for text */
+    --beige-gold: #D6C7A1; /* Example extracted color for accents */
+    --white: #FFFFFF; /* Background color */
+    --light-gray: #F9F9F9; /* Header background color */
+}
+
+/* Typography */
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-blue);
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--dark-blue);
+}
+
+/* Links */
+a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--beige-gold);
+}
+
+/* Buttons */
+.button {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--beige-gold);
+    color: var(--dark-blue);
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--white);
+}
+
+header img {
+    height: 100px;
+    margin-right: 100px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--beige-gold);
+}
+
+#about {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px; /* Restrict content width for readability */
+    padding: 20px;
+    background-color: var(--light-gray); /* Optional: Add a background */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+#about p {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#about li {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about li::before {
+    margin-right: 10px;
+    color: var(--beige-gold); /* Match logo accent color */
+}

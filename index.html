@@ -1,0 +1,72 @@
+<script>
+  // Define the Apps Script URL as a variable
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz9R3WOM-uwl-u-Qgc4ySllQFLb1x2FyfZdkuZdn6mIHlhnxwOnYBbYxv7_bzn8FVXn/exec";
+
+  // Set the form's action attribute dynamically
+  document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      form.action = APPS_SCRIPT_URL;
+  });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Top College Consulting - Helping students achieve their college dreams with personalized guidance, essay editing, interview preparation, and scholarship assistance.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Top College Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="position: sticky; top: 0; background-color: white; z-index: 1000; padding: 10px;">
+        <img src="logo.png" alt="Top College Consulting Logo - Empowering Students" style="transform: scale(1.5); margin: 20px auto; display: block;">
+    </header>
+    <div style="text-align: center; margin-top: 40px auto; padding-top: 20px">
+        <nav>
+            <a href="#home" class="button">Home</a>
+            <a href="#about" class="button">About</a>
+            <a href="#services" class="button">Services</a>
+            <a href="#contact" class="button">Contact</a>
+        </nav>
+    </div>
+
+    <section id="about" style="text-align: left; max-width: 800px; margin: 50px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #1E2A38;">About Me</h2>
+        <img src="rabeea_emad_about_me.jpg" alt="Rabeea Emad, founder of Top College Consulting" style="float: left; margin: 0 20px 20px 0; width: 150px; border-radius: 50%;" loading="lazy">
+        <p>Hi, I’m <strong>Rabeea Emad</strong>, and I specialize in helping students hack the college admissions process to achieve their dreams. With strategy, creativity, and confidence, I guide students to stand out in a competitive field.</p>
+        <p>In 2010, I was accepted into <strong>Harvard</strong>, <strong>Stanford</strong>, <strong>Cornell</strong>, <strong>UC Berkeley</strong>, and <strong>UVA</strong>, all on scholarships. Even without perfect grades or SAT scores, I leveraged a powerful strategy to tell my story—and it worked. My degree from <strong>Harvard (2014)</strong> was transformative and continues to open doors for me.</p>
+        <p>Now, I’m passionate about empowering students to create their own success stories. At <strong>Top College Consulting</strong>, I provide personalized guidance to unlock every student’s potential and turn their dreams into reality.</p>
+        <p><strong>Schedule a free consultation today</strong>, and let’s make your college dreams come true!</p>
+        <form style="margin-top: 20px; text-align: left; max-width: 600px;" method="POST">
+            <label for="name" style="font-size: 1.1em;">Applicant Name (required)*:</label><br>
+            <input type="text" id="name" name="name" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;" required><br>
+
+            <label for="email" style="font-size: 1.1em;">Applicant Email (required)*:</label><br>
+            <input type="email" id="email" name="email" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address."><br>
+
+            <label for="interest" style="font-size: 1.1em;">What are you most interested in talking about (optional):</label><br>
+            <textarea id="interest" name="interest" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc;" rows="4"></textarea><br>
+
+            <button type="submit" class="button" style="margin-top: 10px;">Request Free Consultation</button>
+        </form>
+    </section>
+
+    <footer style="background-color: #1E2A38; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2025 Top College Consulting. All rights reserved.</p>
+        <ul style="list-style: none; padding: 0; margin: 10px 0;">
+    </section>
+</section>
+
+    
+
+    <footer style="background-color: #1E2A38; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2025 Top College Consulting. All rights reserved.</p>
+        <ul style="list-style: none; padding: 0; margin: 10px 0;">
+            <!-- <li style="display: inline; margin-right: 15px;"><a href="mailto:contact@topcollegeconsulting.com" style="color: white; text-decoration: none;">Email Us</a></li> -->
+            <!-- <li style="display: inline; margin-right: 15px;"><a href="https://www.linkedin.com/in/rabeea-e-20146327/" target="_blank" style="color: white; text-decoration: none;">LinkedIn</a></li> -->
+        </ul>
+    </footer>
+
+</body>
+</html>
