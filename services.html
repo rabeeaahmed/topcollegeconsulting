@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Top College Consulting - Helping students achieve their college dreams with personalized guidance, essay editing, interview preparation, and scholarship assistance.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Top College Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header style="position: sticky; top: 0; background-color: white; z-index: 1000; padding: 10px;">
+        <img src="logo.png" alt="Top College Consulting Logo - Empowering Students" style="transform: scale(1.5); margin: 20px auto; display: block;">
+    </header>
+    <div style="text-align: center; margin-top: 40px auto; padding-top: 20px">
+        <nav>
+            <a href="index.html" class="button">Home</a>
+            <a href="#contact" class="button">Contact</a>
+            <a href="services.html" class="button">Services</a>
+        </nav>
+    </div>
+
+
+    <main style="max-width: 900px; margin: 50px auto; padding: 20px;">
+        <h1 style="text-align: center; color: #1E2A38;">Our Services</h1>
+
+        <section style="margin-top: 40px;">
+            <h2 style="color: #1E2A38;">Why Choose Us?</h2>
+            <p>At <strong>Top College Consulting</strong>, we don’t just guide students—we transform their college application journeys. With personalized attention, proven strategies, and ethical practices, we stand out in a crowded market.</p>
+        </section>
+
+        <section style="margin-top: 40px;">
+            <h2 style="color: #1E2A38;">Our Services</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
+                <!-- Group Coaching Calls -->
+                <div style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+                    <h3>👥 Group Coaching Calls</h3>
+                    <p>Interactive sessions covering the application process, financial aid, and scholarships.</p>
+                    <p><strong>$100/session</strong> or <strong>$500 for 6 sessions</strong></p>
+                    <button onclick="addToCart('Group Coaching Calls', 500)" class="button">Add to Cart</button>
+                    <button onclick="learnMore('Group Coaching Calls')" class="button" style="margin-left: 10px;">Learn More</button>
+                </div>
+
+                <div style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+                    <h3>🧠 1:1 Strategy Sessions</h3>
+                    <p>Personalized guidance on file review, essay editing, and interview preparation.</p>
+                    <p><strong>$150/hour</strong> or <strong>$1,400 for 10 hours</strong></p>
+                    <button onclick="addToCart('1:1 Strategy Sessions', 1400)" class="button">Add to Cart</button>
+                    <button onclick="learnMore('1:1 Strategy Sessions')" class="button" style="margin-left: 10px;">Learn More</button>
+                </div>
+
+                <div style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+                    <h3>💰 Scholarship Assistance</h3>
+                    <p>Curated scholarship lists and application support.</p>
+                    <p><strong>$250/package</strong></p>
+                    <button onclick="addToCart('Scholarship Assistance', 250)" class="button">Add to Cart</button>
+                    <button onclick="learnMore('Scholarship Assistance')" class="button" style="margin-left: 10px;">Learn More</button>
+                </div>
+
+                <div style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+                    <h3>🎙️ Mock Interviews</h3>
+                    <p>Simulated interviews with feedback and preparation notes.</p>
+                    <p><strong>$200/session</strong></p>
+                    <button onclick="addToCart('Mock Interviews', 200)" class="button">Add to Cart</button>
+                    <button onclick="learnMore('Mock Interviews')" class="button" style="margin-left: 10px;">Learn More</button>
+                </div>
+
+                <div style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+                    <h3>✍️ Essay Editing</h3>
+                    <p>Detailed feedback and line-by-line edits for college essays.</p>
+                    <p><strong>$200/essay</strong></p>
+                    <button onclick="addToCart('Essay Editing', 200)" class="button">Add to Cart</button>
+                    <button onclick="learnMore('Essay Editing')" class="button" style="margin-left: 10px;">Learn More</button>
+                </div>
+
+                <div style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+                    <h3>🗺️ High School Action Plan</h3>
+                    <p>Roadmap for freshmen and sophomores to build a strong application profile.</p>
+                    <p><strong>$300/plan</strong></p>
+                    <button onclick="addToCart('High School Action Plan', 300)" class="button">Add to Cart</button>
+                    <button onclick="learnMore('High School Action Plan')" class="button" style="margin-left: 10px;">Learn More</button>
+                </div>
+
+            </div>
+        </section>
+    <script>
+    function learnMore(serviceName) {
+        alert(`Learn more about ${serviceName}! This feature is coming soon.`);
+    }
+    const cart = [];
+
+    function addToCart(serviceName, price) {
+        cart.push({ serviceName, price });
+        alert(`${serviceName} has been added to your cart!`);
+        console.log(cart); // For debugging
+    }
+</script>
+</main>
+
+    <footer style="background-color: #1E2A38; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+        <p>&copy; 2025 Top College Consulting. All rights reserved.</p>
+        <ul style="list-style: none; padding: 0; margin: 10px 0;">
+            <li style="display: inline; margin-right: 15px;"><a href="mailto:contact@topcollegeconsulting.com" style="color: white; text-decoration: none;">Email Us</a></li>
+            <li style="display: inline; margin-right: 15px;"><a href="https://www.linkedin.com/in/rabeeaemad" target="_blank" style="color: white; text-decoration: none;">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
